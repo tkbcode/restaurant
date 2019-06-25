@@ -26,10 +26,14 @@
 <nav>
 
 <div class="container">
-	 <div class="row">
-	 	  <div class="col"><p align="center"><a class="btn" href="index.html"><img height=50 width=50 src="images/home.gif"></a></p></div>
-		  <div class="col"><p align="center"><a class="btn btn-secondary badge-pill" href="menu.html">Menu</a></p></div>
-		  <div class="col"><p align="center"><a class="btn btn-primary badge-pill" href="#">Contact Us</a></p></div>
+	 <div class="row" style="padding-top:10px">
+	 	  <div class="col"><p align="center"><a class="btn" href="index.html"><img height="50" width="50" src="images/home.gif"></a></p></div>
+		  <div class="col">
+		    <p align="center"><a class="btn btn-secondary badge-pill" href="menu.html" style="line-height:50px">Menu</a></p>
+		  </div>
+		  <div class="col">
+		    <p align="center"><a class="btn btn-primary badge-pill" href="#" style="line-height:50px">Contact Us</a></p>
+		  </div>
 	 </div>
 </div>
 	 
@@ -40,16 +44,16 @@
 <article class="container" style="padding:25px">
 <form>
   <div class="form-group">
-    <label for="frmName">Name</label>
+    <label for="frmName"><h5 class="text-light">Name</h5></label>
     <input class="form-control transwhite" id="frmName" type="text" placeholder="Your Name Here">
   </div>
   <div class="form-group">
-    <label for="frmEmail">Email address</label>
+    <label for="frmEmail"><h5 class="text-light">Email</h5></label>
     <input type="email" class="form-control transwhite" id="frmEmail" placeholder="name@example.com">
   </div>
   
   <div class="form-group">
-    <label for="frmWhatFor">Example select</label>
+    <label for="frmWhatFor"><h5 class="text-light">What services are you interested in?</h5></label>
     <select class="form-control transwhite" id="frmWhatFor">
       <option>Catering</option>
       <option>Private Party</option>
@@ -59,12 +63,11 @@
   </div>
   
   <div class="form-group">
-    <label for="frmComments">Comments</label>
+    <label for="frmComments"><h5 class="text-light">Write your message here.</h5></label>
     <textarea class="form-control transwhite" id="frmComments" rows="3"></textarea>
   </div>
-  
-  <p>Have you been here before?
-  <div style="display:inline-block" class="form-check form-check-inline">
+  <h5 class="text-light">Have you eaten spiders here before? </h5>
+  <p><div style="display:inline-block" class="form-check form-check-inline">
   <input class="form-check-input" type="radio" name="optBeenHereBefore" id="optHasBeen" value="HasBeen">
   <label class="form-check-label" for="inlineRadio1">have</label>
 </div>
@@ -72,8 +75,7 @@
   <input class="form-check-input" type="radio" name="optBeenHereBefore" id="optHasntBeen" value="HasntBeen">
   <label class="form-check-label" for="inlineRadio2">haven't</label>
 </div></p>
-
-<p>Best days to contact you:
+<h5 class="text-light">Best days to contact you: </h5>
 <div class="form-check form-check-inline">
   <input class="form-check-input" name="chkContact" type="checkbox" id="cMon" value="Monday">
   <label class="form-check-label" for="cMon">Monday</label>
